@@ -1,0 +1,338 @@
+/* =============================================
+   WDD231 – small.css (Mobile First, 320px+)
+   Color Palette:
+     Lavender:   #E6E6FA
+     Velvet:     #7B2D8B
+     Buttermilk: #FFF8DC
+     Mid Blue:   #4A90D9
+   ============================================= */
+
+/* --- CSS Custom Properties --- */
+:root {
+    --lavender: #E6E6FA;
+    --velvet: #7B2D8B;
+    --velvet-dark: #5a1f68;
+    --buttermilk: #FFF8DC;
+    --midblue: #4A90D9;
+    --midblue-dark: #2f6faf;
+    --text-dark: #1a1a2e;
+    --text-mid: #3d3d5c;
+    --white: #ffffff;
+
+    --font-display: "Roboto", sans-serif;
+    --font-body: "Nunito Sans", sans-serif;
+    
+    --radius: 10px;
+    --shadow: 0 4px 18px rgba(123, 45, 139, 0.12);
+    --transition: 0.25s ease;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-body);
+    background-color: var(--buttermilk);
+    color: var(--text-dark);
+    line-height: 1.7;
+    min-height: 320px;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 24px auto 44px;
+    padding: 5px 2px 5px 10px;
+    border-bottom: solid 1px #b3aeae;
+    align-items: center;
+    background-color: var(--velvet);
+    color: var(--buttermilk);
+    position: sticky;
+    top: 0;
+    gap: 0.5rem;
+    z-index: 100;
+    box-shadow: 0 2px 12px rgba(0, 10, 10, 40.25);
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.hamburger {
+    font-size: 2rem;
+    background: none;
+    border: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    cursor: pointer;
+
+}
+
+.hamburger::before{
+    content: "\2630";
+} 
+
+.hamburger.show::before {
+    content: "\00D7";
+}
+
+header img {
+    display: block;
+    width: 50px;
+    height: 40px;
+    padding-bottom: 5px;
+}
+
+header span {
+    font-size: 1.5rem;
+    font-family: var(--font-display);
+    font-weight: 500;
+    letter-spacing: 0.03em;
+}
+
+.navigation {
+    display: none;
+}
+
+.navigation.show {
+    display: block;
+}
+
+nav a {
+    display: block;
+    padding: .8rem 10px;
+    color: var(--text-mid);
+    border-bottom: 1px solid var(--lavender);
+    text-decoration: none;
+    transition: color var(--transition);
+}
+
+.navigation li.current {
+    background-color: #eee;
+}
+
+.navigation a:hover, a:focus {
+    background-color: var(--lavender);
+    color: var(--midblue-dark);
+}
+
+h1 {
+    margin-left: 10px;
+    font-family: var(--font-display);
+    font-size: 2.4rem;
+    color: var(--velvet);
+    letter-spacing: 0.02em;
+    margin-top: -1.5%;
+}
+
+h2 {
+    font-family: var(--font-display);
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: var(--velvet-dark);
+    margin-bottom: 0.75rem;
+    border-left: 4px solid var(--midblue);
+    padding-left: 0.6rem;
+}
+
+section h2 {
+    background-color: var(--velvet);
+    color: var(--buttermilk);
+    border-radius: 6px 6px 0 0;
+}
+
+#about p, #creditCount p {
+    margin-bottom: 0.75rem;
+    color: var(--text-mid);
+    font-size: 0.97rem;
+}
+
+
+/* ------ Main------ */
+main {
+    padding: 2rem 1.2rem;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* -------- Info Cards-------- */
+.card {
+    background: var(--white);
+    border-radius: var(--radius);
+    margin-bottom: 1.8rem;
+    box-shadow: var(--shadow);
+    border-top: 4px solid var(--lavender);
+    transition: transform var(--transition), box-shadow var(--transition);
+}
+
+.card p {
+    padding: 0.75rem 1.4rem; 
+}
+
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 32px rgba(18, 1, 22, 0.18);
+}
+
+#profile {
+    display: grid;
+    grid-template-rows: 3.5rem 1fr;
+    place-items: center;
+}
+
+ #profile h2 {
+    justify-self: stretch;
+    width: 100%;
+}
+
+#profile img {
+    width: 260px;
+    height: 300px;
+    object-fit: cover;
+    object-position: 50% 40%;
+    margin: 0.7rem 10px 1.5rem;
+    border-radius: 6px;
+}
+
+/* ======== Filter Buttons ======== */
+.filter-btn {
+    padding: 0.5rem 2rem;
+    border-radius: 7px;
+}
+
+#courses {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.2rem;
+}
+
+#course-cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+#courses h2, .credit-total {
+    grid-column: 1 / -1;
+}
+
+.filter-buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.filter-btn:hover {
+    background-color: var(--midblue);
+    border-color: var(--midblue);
+    color: var(--white);
+}
+
+.filter-btn.active {
+    background-color: var(--velvet);
+    border-color: var(--velvet);
+    color: var(--buttermilk);
+}
+
+/* Individual Course Card */
+.course-card {
+    background: var(--lavender);
+    border-radius: var(--radius);
+    padding: 0.5rem 0rem;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--velvet-dark);
+    border: 2px solid transparent;
+    transition: transform var(--transition), box-shadow var(--transition);
+    cursor: default;
+}
+
+/* Completed Course style */
+.course-card.completed {
+    background-color: var(--velvet);
+    border-color: var(--midblue);
+}
+
+.course-card.completed .course-num {
+    color: var(--buttermilk);
+}
+
+.course-card.course-card.completed::before {
+    content: "✓";
+    font-size: 1.1rem;
+    padding-right: 1rem;
+    font-weight: 700;
+    color: var(--lavender);
+    justify-content: left;
+
+}
+
+
+.credit-total {
+    font-size: 1rem;
+    color: var(--text-dark);
+    font-weight: 500;
+    padding: 0.5rem 0.8rem;
+    display: inline-block;
+    grid-column: 1 / -1;
+    display: flex;
+    justify-content: center;
+}
+
+.credit-total strong {
+    color: var(--velvet);
+    font-size: 1.05rem;
+}
+
+
+
+/* ================ Footer ==================== */
+footer {
+    padding: 0 10px;
+    text-align: center;
+}
+
+footer p{
+    background-color: var(--velvet);
+    color: var(--lavender);
+    padding: 4px;
+    opacity: 0.90;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 18px;
+    column-gap: 8px;transition: color var(--transition), transform var(--transition);
+
+}
+.social a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border: #ccc solid 1px;
+    border-radius: 22px;
+}
+
+.social a:hover {
+    background-color: #ddd;
+    transform: translateY(-3px);
+}
+
+.social img {
+    width: 22px;
+    height: 22px;
+}
+
+

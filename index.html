@@ -3,9 +3,96 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="WDD231 Course Home Page - Web frontend Development I">
+    <meta name="author" content="Albert Fiati">
+    <title>WDD231 | Course Home</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <link href="https://fonts.googleapis.com/css2?
+    family=Cormorant+Upright:wght@300;400;500;600;700&
+    family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&
+    family=Roboto:ital,wght@0,100..900;1,100..900&
+    display=swap" rel="stylesheet">
+    <!-- Resets browser defaults (Normalize CSS)-->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <!-- CND Alternative -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"> -->
+
+    <!-- Builds on top of the reset (Custom CSS)-->
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    
+    <!-- JavaScript -->
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/course.js" defer></script>
 </head>
 <body>
-    
-</body>
+    <header>
+        <a href="#home"><img src="images/home-logo.svg" alt="site logo" width="1" height="1"></a>
+        <span>Albert Fiati</span>
+        <button id="nav-button" class="hamburger" aria-label="navigation"></button>
+    </header>
+    <nav id="nav-bar" class="navigation">
+        <ul>
+            <li class="current" id="home"><a href="#home">Home</a></li>
+            <li><a href="#">Chamber Project</a></li>
+            <li><a href="#">Final Project</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Home</h1>
+        <div class="about-grid">
+            <section class="card" id="about">
+                <h2>About Me</h2>
+                <p>I am Albert Fiati, a dedicated Software Development student at 
+                    Brigham Young University-Idaho, currently enrolled in courses  in 
+                    Software Engineering and Web Development. With passion for technology 
+                a drive for continuous growth, I am an adventurous and fast learner 
+            committed to mastering the skills needed to thrive in the tech industry. 
+        I am actively working toward earning my Bachelor's degree in Software Development 
+    at BYU-Idaho, where I am building a strong foundation in both theory and practical 
+    application. I bring enthusiasm, adaptability, and results-driven mindset to everything I do.</p>
+            </section>
+            
+            <!-- Section : Profile Pic -->
+            <section class="card" id="profile">
+                <h2>Student Photo</h2>
+                <img src="images/profile.jpg" alt="my profile photo">
+            </section>
+
+            <!-- Section 3: Certificate Courses -->
+            <section id="courses" class="course-grid">
+                <h2>Web &amp; Computer Programming Certificate Courses</h2>
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">All Courses</button>
+                    <button class="filter-btn" data-filter="CSE">CSE Courses</button>
+                    <button class="filter-btn" data-filter="WDD">WDD Courses</button>
+                </div>
+
+                <!-- Courses Cards Container -->
+                <div id="course-cards" class="course-grid" aria-live="polite"></div>
+                
+                <!-- credit Total -->
+                <p class="credit-total">The total credits for course listed above is: <strong id="creditCount">0</strong></p>
+            </section>
+        </div>
+    </main>
+</body> <!-- .end body -->
+
+<!-- Footer -->
+<footer>
+    <div class="social">
+        <a href="https://github.com/fiatiab47-jk" target="_blank"><img src="images/github.svg" alt="github" width="16" height="16"></a>
+        <a href="https://linkedin.com" target="_blank"><img src="images/linkedin.svg" alt="linked in" width="16" height="16"></a>
+        <a href="https://facebook.com" target="_blank"><img src="images/facebook (1).svg" alt="facebook" width="16" height="16"></a>
+        <a href="https://x.com" target="_blank"><img src="images/twitter-x.svg" alt="twitter" width="16" height="16"></a>
+    </div>
+
+    <p>&#64;<span id="currentYear"></span> 🌳&nbsp;Albert Fiati 🌳 Accra,&nbsp;Ghana</p>
+    <p id="lastModified"></p>
+</footer>
 </html>
