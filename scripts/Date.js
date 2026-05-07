@@ -5,3 +5,6 @@ document.querySelector('#currentYear').textContent =
 // Last modified Date
 document.getElementById('lastModified').textContent =
     `Last Modification: ${document.lastModified}`;
+
+    
+console.log("date.js is working");
