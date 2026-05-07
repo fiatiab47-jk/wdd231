@@ -123,6 +123,10 @@ nav a {
     color: var(--midblue-dark);
 }
 
+#nav-bar {
+    scroll-margin-top: 90px;
+}
+
 h1 {
     margin-left: 10px;
     font-family: var(--font-display);

@@ -7,8 +7,8 @@ navButton.addEventListener('click', () => {
 
     // Scroll to top when opening
     if (navBar.classList.contains('show')) {
-        window.scrollTo({
-            top: 0,
+        navBar.scrollIntoView({
+            block: 'start',
             behavior: 'smooth'
         });
     }
