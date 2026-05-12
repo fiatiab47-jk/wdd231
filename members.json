@@ -1,0 +1,28 @@
+{
+"familyName": "Mensah",
+"dateMovedIn": "2024-01-15",
+"numberOf People": 4,
+"visitedBishopric": true,
+"members": [
+    {
+        "name": "Ricky Mensah",
+        "gender": "male",
+        "birthdate": "1985-03-22"
+    },
+     {
+        "name": "Esther Mensah",
+        "gender": "female",
+        "birthdate": "1998-03-10"
+    },
+     {
+        "name": "Williams Mensah",
+        "gender": "male",
+        "birthdate": "1997-08-16"
+    },
+     {
+        "name": "Vic Mensah",
+        "gender": "male",
+        "birthdate": "1972-09-25"
+    }
+]
+}
