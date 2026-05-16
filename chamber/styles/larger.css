@@ -1,0 +1,53 @@
+@media only screen and (min-width: 900px) {
+    .hamburger {
+        display: none;
+    }
+
+    
+    main,
+    nav {
+        margin: 0 auto;
+        max-width: 1200px;
+    } 
+
+    header {
+        grid-template-columns: 24px auto;
+    }
+
+    .navigation {
+        display: block;
+        border-bottom: 1px solid #eee;
+    }
+
+    .navigation a {
+        border: none;
+    }
+
+    .navigation ul {
+        display: flex;
+        list-style: none;
+    }
+
+    h1 {
+        margin-left: 5%;
+    }
+
+    .skip-link {
+        display: flex;
+        justify-content: center;
+    }
+
+    main {
+        padding: 2.5rem 2rem;
+    }
+
+    .grid-view {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .footer-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+
+}

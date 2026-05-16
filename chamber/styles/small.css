@@ -168,6 +168,12 @@ a:focus {
     margin-bottom: 0.5rem;
 }
 
+h1 {
+    font-family: var(--font-mono);
+    padding-left: 10px;
+    margin-bottom: 1rem;
+}
+
 .skip-link {
     padding: 10px;
     top: 1rem;
@@ -187,7 +193,7 @@ a:focus {
     border-radius: 10px 5% 13px 6%;
 }
 
-.directory-hero h1 {
+.directory-hero h2 {
     margin: -5px 10px var(--space-sm) 0;
     font-family: var(--font-heading);
     font-size: 1.8rem;
@@ -271,7 +277,7 @@ a:focus {
 
 .tag-info {
     color: var(--color-primary-dark);
-    padding: 0px 16px 12px;
+    padding: 0px 1px 12px;
     border-bottom: 1px solid #c7c0c0;
 }
 
