@@ -54,38 +54,39 @@
     </nav>  <!-- end. Navigation -->
 
     <a class="skip-link" href="#main-content">Skip to the main content</a>
+    <main>
+        <h1>Directory</h1>
+        <!-- Hero Banner -->
+        <section class="directory-hero" aria-labelledby="directory-title">
+            <h2 id="directory-title">Business Member Directory</h2>
+            <p>Discover and connect with business and organizations across Accra and the 
+                Greater Accra Region - supporting local commerce, networking, and community growth.
+            </p>    
+        </section>
 
-    <h1>Directory</h1>
-    <!-- Hero Banner -->
-    <section class="directory-hero" aria-labelledby="directory-title">
-        <h2 id="directory-title">Business Member Directory</h2>
-        <p>Discover and connect with business and organizations across Accra and the 
-            Greater Accra Region - supporting local commerce, networking, and community growth.
-        </p>    
-    </section>
+        <!-- Directory Controls -->
+        <div class="directory-controls" role="toolbar" aria-label="Directory view controls">
+            <span class="controls-label">
+                <span id="member-count" class="member-count">Loading...</span>
+            </span>
+            <div class="view-toggle" role="group" aria-label="Toggle display view">
+                <button id="btn-grid" class="active" type="button" aria-label="Grid view">
+                    <img src="images/grid.svg" alt="grid logo" width="24" height="24">
+                    Grid
+                </button>
 
-    <!-- Directory Controls -->
-    <div class="directory-controls" role="toolbar" aria-label="Directory view controls">
-        <span class="controls-label">
-            <span id="member-count" class="member-count">Loading...</span>
-        </span>
-        <div class="view-toggle" role="group" aria-label="Toggle display view">
-            <button id="btn-grid" class="active" type="button" aria-label="Grid view">
-                <img src="images/grid.svg" alt="grid logo" width="24" height="24">
-                Grid
-            </button>
-
-            <button id="btn-list" type="button" aria-label="List view">
-                <img src="images/list.svg" alt="list logo" width="24" height="24">
-                List
-            </button>
+                <button id="btn-list" type="button" aria-label="List view">
+                    <img src="images/list.svg" alt="list logo" width="24" height="24">
+                    List
+                </button>
+            </div>
         </div>
-    </div>
 
-    <!-- Main content - Member Cards List -->
-    <main id="main-content">
-        <div id="members-container" class="grid-view">
-            
+        <!-- Main content - Member Cards List -->
+        <div id="main-content">
+            <div id="members-container" class="grid-view">
+                
+            </div>
         </div>
     </main>
     

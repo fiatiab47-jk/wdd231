@@ -3,4 +3,8 @@
     .grid-view {
         grid-template-columns: repeat(2, 1fr);
     }
+
+    .list-view {
+        grid-template-columns: 1fr;
+    }
 }
