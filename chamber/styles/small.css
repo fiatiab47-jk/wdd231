@@ -277,7 +277,7 @@ h1 {
 
 .tag-info {
     color: var(--color-primary-dark);
-    padding: 0px 1px 12px;
+    padding: 0px 10px 12px;
     border-bottom: 1px solid #c7c0c0;
 }
 
@@ -322,9 +322,7 @@ h1 {
 /* Default (mobile)*/
 #members-container {
     display: grid;
-    grid-template-columns: 1;
-    gap: 20px;
-    padding: var(md);
+    gap: 1rem;
     background: var(--color-bg);
 }
 
@@ -379,7 +377,7 @@ address a {
 address a:hover {
     background-color: #ddd;
     transform: translateY(-3px);
-    border: var(--color-secondary-pale);
+    border: 1px solid var(--color-secondary-pale);
     border-radius: var(--space-xs);
     padding: var(--space-xs);
     color: #0b07fa;
