@@ -1,0 +1,94 @@
+{
+  "members": [
+    {
+      "name": "Accra Business Hub Ltd",
+      "address": "14 Independence Avenue, Ridge, Accra",
+      "phone": "+233 30 277 1234",
+      "website": "https://accrabusinesshub.gh",
+      "image": "data:image/jpeg;base64,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",
+      "membershipLevel": 3,
+      "industry": "Business Services",
+      "description": "Co-working and business support hub in Accra."
+    },
+    {
+      "name": "Kantamanto Trade Solutions",
+      "address": "22 Ring Road East, Osu, Accra",
+      "phone": "+233 30 278 5678",
+      "website": "https://kantamantotrade.gh",
+      "image": "https://uschamber-co.imgix.net/https%3A%2F%2Fs3.us-east-1.amazonaws.com%2Fco-assets%2Fassets%2Fimages%2FAPRIL-PEM-Shot27_EXPENSE-MGMT-MEMBERSHIP_8701_Square.png?auto=compress%2Cformat&crop=focalpoint&dpr=3&fit=crop&fp-x=0.1808&fp-y=0.4524&h=388&q=80&w=388&s=977941592846225110f0b9e7b3843468",
+      "membershipLevel": 3,
+      "industry": "Wholesale & Retail",
+      "description": "Wholesale and supply chain solutions provider."
+    },
+    {
+      "name": "Ghana Tech Innovations",
+      "address": "7 Liberation Road, Accra",
+      "phone": "+233 24 456 7890",
+      "website": "https://ghanatechinnovations.gh",
+      "image": "ghana-tech.webp",
+      "membershipLevel": 3,
+      "industry": "Information Technology",
+      "description": "Software and digital innovation company."
+    },
+    {
+      "name": "Osu Retail Group",
+      "address": "56 Oxford Street, Osu, Accra",
+      "phone": "+233 20 334 2211",
+      "website": "https://osuretailgroup.gh",
+      "image": "osu-retail.webp",
+      "membershipLevel": 2,
+      "industry": "Retail",
+      "description": "Trusted retail chain in Accra."
+    },
+    {
+      "name": "Labadi Beach Hospitality",
+      "address": "1 Labadi Road, La, Accra",
+      "phone": "+233 30 277 9900",
+      "website": "https://labadibeachhospitality.gh",
+      "image": "labadi-hospitality.webp",
+      "membershipLevel": 2,
+      "industry": "Hospitality & Tourism",
+      "description": "Beachfront hospitality and event services."
+    },
+    {
+      "name": "Tema Port Logistics",
+      "address": "Tema Port Complex, Tema, Greater Accra",
+      "phone": "+233 30 220 4455",
+      "website": "https://temaportlogistics.gh",
+      "image": "",
+      "membershipLevel": 2,
+      "industry": "Logistics & Shipping",
+      "description": "Port logistics and freight services."
+    },
+    {
+      "name": "Adenta Agri-Foods Co.",
+      "address": "33 Adenta Highway, Adenta, Greater Accra",
+      "phone": "+233 24 789 0011",
+      "website": "https://adentaagrifoods.gh",
+      "image": "https://www.accrisoft.com/clientuploads/2022/Chamber_Of_Commerce/The_Best_Chamber_of_Commerce_Websites_of_2021/Best_chamber_of_commerce_2_11zon-min.jpg",
+      "membershipLevel": 1,
+      "industry": "Agriculture & Food Processing",
+      "description": "Fresh farm-to-market food supply."
+    },
+    {
+      "name": "East Legon Finance Partners",
+      "address": "18 Ambassadorial Road, East Legon, Accra",
+      "phone": "+233 30 251 6677",
+      "website": "https://eastlegonfinance.gh",
+      "image": "https://www.africaoutlookmag.com/media/2022/11/mobus-properties-1-1662726598.profileImage.2x-jpg-webp-webp.webp",
+      "membershipLevel": 1,
+      "industry": "Finance & Investment",
+      "description":"SME financial and investment services."
+    },
+    {
+      "name": "Accra Green Energy Foundation",
+      "address": "45 Kotoka Avenue, Airport Residential, Accra",
+      "phone": "+233 30 276 3300",
+      "website": "https://accragreenergy.gh",
+      "image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAA1VBMVEX////As6NkU0G+sJ/AsqT///26sZ9UPCFZRjBkUz+LgHSspZyXjoPY08v8+vj7+/vo5uTY1tJfTTn18/BeTDZrW0tYRSrQzMfDvrl/dGVdSjLs7OhRPiNWQyi7tKqyrKSjnZGTiYDi3tnTzMFUPh5kVDyFemxRPCS4r6dyZVVMOxrAu7JlVkZwYk3JxMBVQiLk39bY18rv7OTOwrTZzsbNw7fV0c+akYuAdWFlUjmHgW9sXUSHe3FONRF6bF9YQCxCIQB0YVVIMRdEKwCuqZq/t7Z1bFg90amfAAALPElEQVR4nO2ba3vauBaFFYjxFV9kYxtfsFGMwRCcNJ2Q0zZxTjud/P+fdLZsSAjhMs9MCTkz++0HIntF1ZK2pC2bEIIgCIIgCIIgCIIgCIIgCIIgCIIgCIIgCIIgCIIgCIIgCIIgCIIgCIIgCIIgCIIgCIIgyD8A4S/d+pvi98AIWRe4Do19mmuuYfs1dT3sZo/mBAjsttNecv7Z0rcNAGjOVprOZ7bdALs9X2nOPrOt9ZwCo3vePuucPdPuXNibGv3TWfv8WdEBjadvRqLRrZ2tAK8X+ruZ2Ic5eGnVysG5dVhzxl5rrs/eaNqDDc1J+NRZjc35+fModTq362HYXRuZF9H5xdoYChftLZKz9sWpA1UonxvW7nBWxfbsJcJu268lWzTC7a56bk8cqV571azb69C2b64vVvOtM1j1/qrx5+3b6xvbhgX1WTPb0HT4AvO6nvbtqbzVWMvGr60tRjOf2mc3y4XkU2cVcM8a/bqel53P4dLhMozbne6bej7fnDJO7aW/81drJ0yp83Z3NQ/DZePPNjSwnnZXbQ+bTmh/fqUxoJ5O93it/zM0sdW+2LzO1pp6u2PF6N7aq91CmLV3aGZvtp33xex06gh9G0bCmqZu/G9766kNnnq4tnHRObwS1MN8SPMBVpStGIN6hdy7mhvNDNuvaR/WnIabej283i0QlgHY3p+ZXNeaPfWcDFb3/Y61fGFZPHOrt4HP++vpnvON49S5yzZ+45v4juEpp5IbwT2ei50fGJ4LkHQ+QgL6Bu5wtr3r9d6o1aJVs9AcGEJye35YcxouoGXh9luq1AIknzvsHNrTbiETPfG+twM4zu2Kv0HtMLiAKD28hFy0Ozcf5az7Gra78UJBIUoVWCc75sF6umDwY3LDdve8JdFWAObMP7EJhB9xo6jRrT03TdMMySw0DqZifigsDmlmO6b70dGGe/9nW6uEg5phnxBF27vQhMP8r7TuV2BKQbqzbaEqZyVM1shRd2vS0RUcTCyR7tPQ6HQ5+R2l0rC75cGg7SkxpRWfppoTSNpWTanEAf0P/1FxaKBZWzX5mNKTDSE0oCXLjtTTfPNlCIzQShQZFpqWVOcpofylRaX5ds0orlcZk7Zkx53fleZL+m2YVpJT0MjS4eX4eHgZ3/eo5MwrRUvTVFP6RUuilF+Nk0ZTRiO51vS4Rq01shtwjSwNGo3/CBJ5peH1VKBp6pFmp/NH+NYu81bwsQQodaDPmyvB3WovSdxGAhYoDUBEGwU0Pm0UAiRBy3qo09BaaVz1xNnARGptZdV4TrJD46YvbVd31aO+v6cNPEpH8kazZBpP1jVlE2+voasQbfCdtxqI29OGaEP49crZaLv7tHEYCvPHjfZTqdrU9KU3mv4pF5k1rPsgGMmriRQElfdW082DYGVAdgK6TeP1naVmNOL19D/Qsylz8vWbK3HkXGXbX2+ayX2vlkitWrO1niSvNa4r58lHOxTbIVt0rXBv/sU1i/0aweavSNn+ej4sf2LV/5DHRARBEAT5l2EP7u4Sg92Xv7heg6cw5q5HVob5bgnO9SgSo9hePCT7VL5yA31xv55ZK9pWpTKsP/S0R2VNaBU7KvSmkx13fjXC3P0pkJB0xYTUT40EXSD1v+cSR40rOAo9LA9/1lzf6fBSqT+qxyLVksbhtqzNG7+Xw0XcX/6PWpH1bbDyg06IJU164j2UHn/Q2pXqxAmxpwNi/pFYpBxD9Nng0rb4t/VMz/dsXijh5NerHfpi/SzNaFX2zBOIsfjDh3i1PN33ddsvDfj/Es/nB0U2821ilKG55eT1SxjEaT0puq6j9aWEeJOyHzFLgtLjqsQdBrljcod382/xoCUHI6G4J5b88KOw7XGUZYVNBpkrWkuHSlx/l0O/vKTTKCXWf13RZURxnx7EvHi4GhJPkqcZZWQyDbKeHcaVlB3JYRKrMAiRZokasaAtxJppV541htKYl3wt4p2rRmGscIfQ6bHvZV2DFArJ5dB6VPVIFQZiSQRBgF9pHPZd1jikvkXnArEJczUydFNzLqlM/qZ70r09iDXbVQgTU5sGRzs5lo/K0mECHynpx1/7rsdLLOOlvJJqh1PiT1V3YGiS45bgkJAnRehpRKj6wnhAwumMlBUNnh3G9fsPnc/Dy7mup/VbqyH4zoOQFC2bz0N93Pfcvqa59/aX6kj+YPI4TpeEjUMWpfZDSryscSimIYRw2YzhVCA5dWbJlDHu0KodzodEKPLGod99SEJp5TBtHqwuHQoajPvKoROSSq4d2lHuuXmqpZPQOeIj8Fnm3N9Lw6VDEvWSYVQux9AIeKl2KArEpNIsEbu+WLKpyvSnnCjBwo8SPfrJHZaZF0IFRcHXD/Oq5YcmE5YOK1nX1x2OwGFiqBn0oWJACIdHfcjfzSn9PrAcWCe/qKT7JNE+s75AaQSlipe4wx+w5E+mAz13+/2SDMcZq+5JOBfHuW63YAypL/Qj2ruDMX/itfqPkTsudGdOiCMLk8yhMfSIyCB+Q/I9sC9EKk0rm6Si5Pzohlf9Izp8hbCntF627ebnMFy7wa8Jq0Loq4ml+5Ap+b5ArESFvWExs4k300npG3aZJPX+wO/YxuxYe8W/C2vB3xE1A/ALnh3pwH7FOz+g0our3+sdyVOe+n/jqbs+dIu6HjVyW+s3rPxNIBrv6nGWpax+9yk61Tx9uS4c6uuNu2qsfb/kP3gF/bl+o3x49UYDfo+5KXkXPBXmv6UEE97HCxEWex5eIeOnm1A34NNmer2mmObqOGTzuwbkpjZX8ksha2JSc4Q0an6Kid2dJTO+edhd0+O7pk2EsM5gLfidUtJswQxtyzR5cnu0txnDKBYvbSWWxwGUFLE5Jt5JGaTcdqAUccu/jOWQKMUwpupQDOBMkDiiMyO+m8IOnzrZw4LrR3UUXkg5JDa1wytI3KNMlBhhrShTpJkpQpUthVijaeT64bTlKqHbL76lWUls6VhZzSKCLDjWYNpYPN4Kp55Ek0y7hpRbdwJVC6SfkE9C1pzPqKQMpDnpPqQ3ShT6kKzDjp8vfGMyTRhs44S/2w5yYnVXDmemKmmkigde78VhJTGz6tVjaAaBMmGQBfvZsV65JTxlgcOfKtaJZNFkzPeQPHpj1aAVCWGnZuM7cMhIAZd7PchNkzKN/DKCpF3JeIxWrUGp8VSO0XlFmaQsHWaMQEJmBJDZJONnh8Osn0BQW5ATmgEfup5MNOlYX6/ZcKhc1VFaUZiaYqpzh488+weHgcmzLTLvCQrt9ebzssx8nmLz+ddrzefzHtSgZWH45VLyVw4tEso55J+w73OHs9qhMCgepHuhdujyRwLQE8dLTK0MojTTVg7LqOB9OXxk5I9sUDuMuUPtxeE3AyKaa2ciGNHq78XcO8t1YghDOgt63LUmQb5eO9TlFi8OTKhKbynGxCdhHlmMO6yHm8VK7B/LIfR6PJ6HJP2dt1ogQzEuLr+yuJdS2ebT3xyDwwdwKJpNlI4MmDxD5UnwH6BVLHCHFbOiL9r9V6jAj1qKI/NTtSoGT8mDxaMUhvNJkeMB6UcOlXJSiHdJz7FZXJS8/+BgWVH5iN8BWwz4H0Cw5V9BCP4wVyak+7WvwbahpMRWEujxAUm+QjdoNrnTDMK0fp4a3ZwPnzXsKxax4ErCl6pZv0jDuyEjpaapHtRhawnRtblS5rBgqnDRIqY2n+efoHN7mq3UX1qYuMrxDP4S1rf9rX9muXHRMNY/CBlkb/6A5Z9FEbUOi/6vSdQP8vUMBEEQBEEQBEEQBEEQBEEQBEEQBEEQBEEQBEEQBEEQBEEQBEEQBEEQBEEQBEEQBEEQBEH+5fwPojwKGfhEzT4AAAAASUVORK5CYII=",
+      "membershipLevel": 1,
+      "industry": "Non-Profit / Clean Energy",
+      "description": "Promoting renewable energy in Ghana."
+    }
+  ]
+}

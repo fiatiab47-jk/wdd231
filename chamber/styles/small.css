@@ -1,0 +1,420 @@
+/* =============================================
+   WDD231 – small.css (Mobile First, 320px+)
+   Color Palette:
+     Lavender:   #E6E6FA
+     Velvet:     #7B2D8B
+     Buttermilk: #FFF8DC
+     Mid Blue:   #4A90D9
+   ============================================= */
+
+/* --- CSS Custom Properties --- */
+:root {
+    --lavender: #E6E6FA;
+/* Primary: Deep Teal — professional, trustworthy */
+    --color-primary: #0D5C63;
+    --color-primary-dark: #083F45;
+    --color-primary-light: #117A82;
+    --text-dark: #1a1a2e;
+
+    /* Secondary: Warm Gold — prosperity, energy */
+    --color-secondary: #B8860B;
+    --color-secondary-light: #D4A017;
+    --color-secondary-pale: #FDF3DC;
+
+    /* Neutrals */
+    --color-bg: #F5F7F8;
+    --color-surface: #FFFFFF;
+    --color-border: #D1D9DC;
+    --color-text: #1A2B2E;
+    --color-text-muted: #4A6267;
+    --color-text-light: #FFFFFF;
+    
+    /* Membership badges */
+    --color-gold: #B8860B;
+    --color-silver: #607D8B;
+    --color-member: #455A64;
+    
+    /* Spacing */
+    --space-xs: 0.25rem;
+    --space-sm: 0.5rem;
+    --space-md: 1rem;
+    --space-lg: 1.5rem;
+    --space-xl: 2rem;
+    --space-2xl: 3rem;
+
+    /* Typography */
+    --font-heading: 'Playfair Display', Georgia, serif;
+    --font-body: 'Source Sans 3', 'Segoe UI', sans-serif;
+    --font-mono: 'Courier New', monospace;
+
+    /* Shadows */
+  --shadow-sm: 0 1px 3px rgba(34, 4, 51, 0.1);
+  --shadow-md: 0 4px 12px rgba(50, 53, 53, 0.12);
+  --shadow-lg: 0 8px 24px rgba(15, 15, 15, 0.15);
+
+    --transition: 0.3s ease;
+}
+
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+}
+
+body {
+    font-family: var(--font-body);
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    line-height: 1.2;
+    min-height: 100vh;
+    margin: 0 auto;
+    padding: 3px;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 24px auto 44px;
+    padding: 8px 2px 5px 10px;
+    border-bottom: solid 1px #b3aeae;
+    align-items: center;
+    background-color: var(--color-primary-dark);
+    color: var(--lavender);
+    position: sticky;
+    top: 0;
+    gap: 1rem;
+    z-index: 100;
+    box-shadow: 0 2px 12px rgba(0, 10, 10, 40.25);
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.hamburger {
+    font-size: 2rem;
+    background: none;
+    border: none;
+    font-family: var(--font-mono);
+    cursor: pointer;
+
+}
+
+.hamburger::before {
+    content: "\2630";
+}
+
+.hamburger.show::before {
+    content: "\00D7";
+}
+
+header img {
+    display: block;
+    width: 50px;
+    height: 60px;
+    padding-bottom: 5px;
+}
+
+header span {
+    font-size: 1.5rem;
+    font-family: var(--font-heading);
+    font-weight: 500;
+    letter-spacing: 0.03em;
+}
+
+#headerBrand p {
+    font-size: 0.8rem;
+    color: var(--color-secondary-pale);
+    letter-spacing: 0.08rem;
+    text-transform: uppercase;
+}
+
+.navigation {
+    display: none;
+}
+
+.navigation.show {
+    display: block;
+}
+
+nav a {
+    display: block;
+    padding: .8rem 10px;
+    color: var(--color-primary-dark);
+    border-bottom: 1px solid var(--color-silver);
+    text-decoration: none;
+    transition: color var(--transition);
+}
+
+.navigation li .current {
+    color: var(--color-gold);
+}
+
+.navigation a:hover,
+a:focus {
+    background-color: var(--color-border);
+    color: var(--text-dark);
+}
+
+#nav-bar {
+    scroll-margin-top: 90px;
+    margin-bottom: 0.5rem;
+}
+
+.skip-link {
+    padding: 10px;
+    top: 1rem;
+    text-decoration: none;
+}
+
+/* ===========================================
+    Hero Banner (Directory page Intro)
+==============================================*/
+.directory-hero {
+    background: linear-gradient(135deg, var(--color-primary-dark)10%, var(--color-primary)60%, var(--color-primary-light)10%);
+    color: var(--color-text-light);
+    padding: var(--space-xl) var(--space-md);
+    text-align: center;
+    max-width: 800px;
+    margin: 1rem auto;
+    border-radius: 10px 5% 13px 6%;
+}
+
+.directory-hero h1 {
+    margin: -5px 10px var(--space-sm) 0;
+    font-family: var(--font-heading);
+    font-size: 1.8rem;
+    color: var(--velvet);
+    letter-spacing: 0.02em;
+    line-height: 1.5;
+}
+
+.directory-hero p {
+    font-size: 0.95rem;
+    color: var(--lavender);
+    max-width: 540px;
+    margin: 0 auto;
+}
+
+/* ====================================
+        Directory Controls
+=======================================*/
+.directory-controls{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: var(--space-md);
+    gap: var(--space-md);
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    margin-bottom: 1rem;
+    max-width: 1100px;
+    margin: 0 auto;
+    border-radius: 7px;
+} 
+
+.member-count {
+    color: var(--color-text);
+    font-family: var(--font-heading);
+}
+
+.view-toggle button {
+    margin: 1rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+/* .view-toggle button:hover {
+    background: var(--color-bg);
+} */
+
+.view-toggle button.active {
+    background-color: var(--color-primary);
+    color: var(--color-text-light);
+    border: 1px solid var(--color-text);
+    padding: 4px;
+    border-radius: 7px;
+}
+
+
+/* ===================================
+   Member Cards
+=================================== */
+
+
+#members-container section {
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: 10px;
+    padding: var(--space-md);
+    box-shadow: var(--shadow-sm);
+    overflow: hidden;
+    transition: box-shadow 0.25s, transform 0.25s;
+}
+
+
+
+/* Hover effect */
+#members-container section:hover {
+    box-shadow: var(--shadow-lg);
+    transform: translateY(-3px);
+}
+
+.tag-info {
+    color: var(--color-primary-dark);
+    padding: 0px 16px 12px;
+    border-bottom: 1px solid #c7c0c0;
+}
+
+.tag-info h2 {
+    font-weight: 500;
+}
+
+.profile-grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: start;
+    gap: 1.5rem;
+    margin: 1rem 0 0;
+}
+
+.profile-grid img{
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 6px;
+    object-fit: cover;
+    object-position: 50% 40%;
+    border: 1px solid var(--color-silver);
+}
+
+.member-info {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.5;
+    margin-top: 0.5rem;
+}
+
+.member-info .membership.gold {
+    font-weight: 600;
+    color: var(--color-text);
+}
+
+
+/* ===================================
+        Members List Layout
+=================================== */
+/* Default (mobile)*/
+#members-container {
+    display: grid;
+    grid-template-columns: 1;
+    gap: 20px;
+    padding: var(md);
+    background: var(--color-bg);
+}
+
+.grid-view {
+    padding: var(--space-sm);
+}
+
+
+/* List view */
+.list-view {
+    display: flex;
+    flex-direction: column;
+    padding: var(--space-sm);
+    background: var(--color-bg);
+}
+
+/* ==============================================
+                FOOTER
+===============================================*/
+#site-footer {
+    background-color: var(--color-primary-dark);
+    color: rgb(225,222,225);
+    padding: var(--space-xl) var(--space-md) var(--space-md);
+    margin-top: var(--space-md);
+    border-radius: 12px 12px 0 0;
+}
+
+.footer-grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--space-lg);
+}
+
+#site-footer h3 {
+    font-weight: 550;
+}
+
+/* ==================
+    Footer Address 
+=======================*/
+
+.footer-info {
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+
+address a {
+    color: #b3e5ff;
+    transition: var(--transition);
+}
+
+address a:hover {
+    background-color: #ddd;
+    transform: translateY(-3px);
+    border: var(--color-secondary-pale);
+    border-radius: var(--space-xs);
+    padding: var(--space-xs);
+    color: #0b07fa;
+}
+
+/* =====================
+    Social Media Links
+=========================*/
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-md);
+}
+
+.s-media{
+    display: flex;
+    justify-content: space-around;
+    column-gap: 2rem;
+    transition: color var(--transition), transform var(--transition);
+    margin-bottom: 1rem;
+}
+
+.s-media a:hover {
+    transform: translateY(-3px);
+    border: 1px solid var(--color-secondary-pale);
+    border-radius: var(--space-xs);
+    padding: var(--space-xs);
+}
+
+.s-media img {
+    width: 32px;
+    height: 32px
+}
+.footer-bottom {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-xs);
+    line-height: 1.5;
+}
+
+footer b {
+    font-weight: 600;
+}

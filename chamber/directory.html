@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Chamber Directory - Explore the member directory of th Accra Greater chamber of Commerce - connecting businesses across the Greater Accra Region.">
+    <meta name="author" content="Albert Fiati">
+    <title>Member Directory | Accra Greater Chamber of Commerce</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico">
+
+    <!-- Social Media Meta Tags -->
+    <meta property="og:title" content="WDD231 | Accra Greater Chamber of Commerce - Member Directory | Albert Fiati">
+    <meta property="og:description" content="The member directory of the Accra Greater Chamber of Commerce, built with the Fetch API and JSON data.">
+    <!-- MAKE SURE TO CHANGE THIS PHOTO  -->
+    <meta property="og:image" content="https://byui-cse.github.io/cse-ww-program/data/prophets/joseph-smith.jpg">
+    <meta property="og:url" content="https://fiatiab47-jk.github.io/wdd231/directory.html">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet" />
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <!-- JS -->
+    <script src="scripts/directory.js" defer></script>
+</head>
+
+<body>
+    <!-- Header -->
+    <header id="site-header">
+        <a href="#home"><img src="images/home-logo.svg" alt="site logo" width="1" height="1"></a>
+        <div id="headerBrand">
+            <span>Accra Greater Chamber</span>
+            <p>of Commerce &amp; Industry</p>
+        </div>
+        <button id="nav-button" class="hamburger" aria-label="navigation"></button>
+    </header> <!-- end. Header -->
+
+    <!-- Navigation -->
+    <nav id="nav-bar" class="navigation">
+        <ul>
+            <li id="home"><a href="../index.html">Home</a></li>
+            <li><a href="#">Discover Accra</a></li>
+            <li><a class="current" href="directory.html">Directory</a></li>
+            <li><a href="#">Join</a></li>
+        </ul>
+    </nav>  <!-- end. Navigation -->
+
+    <a class="skip-link" href="#main-content">Skip to the main content</a>
+
+
+    <!-- Hero Banner -->
+    <section class="directory-hero" aria-labelledby="directory-title">
+        <h1 id="directory-title">Business Member Directory</h1>
+        <p>Discover and connect with business and organizations across Accra and the 
+            Greater Accra Region - supporting local commerce, networking, and community growth.
+        </p>    
+    </section>
+
+    <!-- Directory Controls -->
+    <div class="directory-controls" role="toolbar" aria-label="Directory view controls">
+        <span class="controls-label">
+            <span id="member-count" class="member-count">Loading...</span>
+        </span>
+        <div class="view-toggle" role="group" aria-label="Toggle display view">
+            <button id="btn-grid" class="active" type="button" aria-label="Grid view">
+                <img src="images/grid.svg" alt="grid logo" width="24" height="24">
+                Grid
+            </button>
+
+            <button id="btn-list" type="button" aria-label="List view">
+                <img src="images/list.svg" alt="list logo" width="24" height="24">
+                List
+            </button>
+        </div>
+    </div>
+
+    <!-- Main content - Member Cards List -->
+    <main id="main-content">
+        <div id="members-container" class="grid-view">
+            
+        </div>
+    </main>
+    
+    <!-- Footer -->
+    <footer id="site-footer">
+        <div class="footer-grid">
+            <!-- Contact Info -->
+            <div class="footer-info">
+                <h3>Accra Greater Chamber of Commerce</h3>
+                <address>
+                    1 Gamel Abdul Nasser Avenue <br />
+                    Ridge, Accra, Greater Accra <br />
+                    Ghana <br />
+                    <a href="mailto:info@accrachamber.gh">info@accrachamber.gh</a> <br />
+                    <a href="tel:+233257566090">+233257566090</a>
+                </address>
+            </div>
+
+            <!-- Footer Links -->
+            <div class="footer-links">
+                <h3>Socials</h3>
+                <div class="s-media">
+                    <a href="https://github.com/fiatiab47-jk" target="_blank"><img src="images/github.svg" alt="github" width="16" height="16"></a>
+                    <a href="https://linkedin.com" target="_blank"><img src="images/linkedin.svg" alt="linked in" width="16" height="16"></a>
+                    <a href="https://facebook.com" target="_blank"><img src="images/facebook-1.svg" alt="facebook" width="16" height="16"></a>
+                    <a href="https://x.com" target="_blank"><img src="images/twitter-x.svg" alt="twitter" width="16" height="16"></a>
+                </div>
+            </div>
+
+            <!-- Bottom -->
+            <div class="footer-bottom">
+                <p><b> WDD321 Class project</b> <br>
+                Albert Fiati</p>
+                <p>Copyright &copy; <span id="currentYear"></span><b>&nbsp;Accra Greater Chamber of Commerce </b></p>
+                <p id="lastModified"></p>
+            </div>
+
+        </div>
+    </footer>
+</body>
+
+</html>
