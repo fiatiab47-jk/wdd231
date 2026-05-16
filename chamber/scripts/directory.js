@@ -87,7 +87,7 @@ function displayMembers(members) {
             </div>
 
             <div class="profile-grid">
-            <img src="${member.image}"
+            <img src="images/${member.image}"
             alt = "${member.name} logo"
             loading="lazy" width="200" height="250">
             

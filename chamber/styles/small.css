@@ -287,7 +287,7 @@ h1 {
 
 .profile-grid {
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 2fr 2fr;
     align-items: start;
     gap: 1.5rem;
     margin: 1rem 0 0;

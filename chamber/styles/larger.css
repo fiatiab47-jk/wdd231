@@ -45,6 +45,10 @@
         grid-template-columns: repeat(3, 1fr);
     }
 
+    .profile-grid img {
+        margin-top: 0.4rem;
+    }
+
     .footer-grid {
         grid-template-columns: repeat(3, 1fr);
     }
