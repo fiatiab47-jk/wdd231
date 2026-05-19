@@ -128,5 +128,37 @@ filterButtons.forEach(btn => {
     });
 });
 
+
+
+// ============= Trials ================
+const myPromise = new Promise((resolve, reject) => {
+    setTimeout(() => {
+        const success = true;
+        if (success) {
+            resolve("Operation was successful");
+        } else {
+            reject("Operation failed.")
+        }
+    }, 5000);
+});
+myPromise
+    .then(result => console.log(result))
+    .catch(error => console.log(error));
+
+const myAsyncFunction = async () => {
+    try {
+        const value = await myPromise;
+        console.log(value);
+
+        // Fetch data after the promise resolves
+        const response = await fetch("https://jsonplaceholder.typicode.com/posts/1");
+        const data = await response.json();
+        console.log(data);
+    } catch (error) {
+        console.error("Error fetching data:", error);
+    }
+};
+
 // Initial render all courses
 renderCourses(coursesArray);
+myAsyncFunction();
