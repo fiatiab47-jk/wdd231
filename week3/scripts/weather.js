@@ -8,7 +8,7 @@ const captionDesc = document.querySelector('figcaption');
 //    - lat/lon: Trier, Germany (49.75°N, 6.64°E)
 //    - units: imperial (°F) or swap to metric for °C
 //    - appid: your personal API key
-const url = 'https://api.openweathermap.org/data/2.5/weather?lat=49.75&lon=6.64&units=imperial&appid=497ccc3149964e7d965654cbe8c920bf';
+const url = 'https://api.openweathermap.org/data/2.5/weather?lat=49.75&lon=6.64&units=metric&appid=497ccc3149964e7d965654cbe8c920bf';
 
 
 //    Async fetch function with try/catch error handling
@@ -32,7 +32,7 @@ const apiFetch = async () => {
 // Display function; puts data into the HTML elements
 function displayResults(data) {
     // data.main.temp => the current temperature number
-    currentTemp.innerHTML = `${data.main.temp}&deg;F`;
+    currentTemp.innerHTML = `${data.main.temp}&deg;C`;
     
     // data.weather[0].icon  →  e.g. "10d" — used to build the image URL
     const iconsrc = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
