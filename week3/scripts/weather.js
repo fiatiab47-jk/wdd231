@@ -35,9 +35,12 @@ function displayResults(data) {
     currentTemp.innerHTML = `${data.main.temp}&deg;C`;
     
     // data.weather[0].icon  →  e.g. "10d" — used to build the image URL
+    // data.weather[0] is an array, so we use [0] to grab the first (usually)
+    // only weather event 
     const iconsrc = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
     
     // data.weather[0].description  →  e.g. "light rain"
+    // Grabs the human-readable description from the first weather event
     let desc = data.weather[0].description;
     weatherIcon.setAttribute('src', iconsrc);
     weatherIcon.setAttribute('alt', desc);
