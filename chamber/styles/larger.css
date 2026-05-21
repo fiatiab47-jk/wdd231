@@ -29,7 +29,7 @@
     }
 
     h1 {
-        margin-left: 5%;
+        margin-left: 2%;
     }
 
     .skip-link {
@@ -53,5 +53,37 @@
         grid-template-columns: repeat(3, 1fr);
     }
 
+    /*===========================
+            Home 
+    =============================*/
+    .home-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
 
+    #spotlight-sec {
+       grid-column: 1 /-1;
+    }
+
+    .weather-sec {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .hero content {
+        top: 45%;
+    } 
+
+    .hero-content h2 {
+        font-size: 3rem;
+    }
+
+    .hero-content p{
+        font-size: 1.8rem;
+    }
+
+    .cta-btn {
+        right: 3rem;
+        bottom: 2rem;
+    }
 }

@@ -70,7 +70,7 @@ html {
 
 body {
     font-family: var(--font-body);
-    background-color: var(--color-bg);
+    background-color: #bec0c749;
     color: var(--color-text);
     line-height: 1.2;
     min-height: 100vh;
@@ -93,10 +93,10 @@ header {
     box-shadow: 0 2px 12px rgba(0, 10, 10, 40.25);
 }
 
-img {
+/* img {
     max-width: 100%;
     display: block;
-}
+} */
 
 .hamburger {
     font-size: 2rem;
@@ -117,8 +117,8 @@ img {
 
 header img {
     display: block;
-    width: 50px;
-    height: 60px;
+    width: 100%;
+    height: auto;
     padding-bottom: 5px;
 }
 
@@ -142,6 +142,8 @@ header span {
 
 .navigation.show {
     display: block;
+    background: var(--color-secondary-pale);
+    color: var(--color-text);
 }
 
 nav a {
@@ -154,12 +156,13 @@ nav a {
 }
 
 .navigation li .current {
-    color: var(--color-gold);
+    color: var(--color-text);
+    background-color: var(--color-text-light);
 }
 
 .navigation a:hover,
 a:focus {
-    background-color: var(--color-border);
+    background-color: var(--color-bg);
     color: var(--text-dark);
 }
 
@@ -178,6 +181,8 @@ h1 {
     padding: 10px;
     top: 1rem;
     text-decoration: none;
+    display: block;
+    margin-top: 10px;
 }
 
 /* ===========================================
@@ -393,6 +398,10 @@ address a:hover {
     gap: var(--space-md);
 }
 
+footer h3 {
+    color: var(--lavender);
+}
+
 .s-media{
     display: flex;
     justify-content: space-around;
@@ -422,3 +431,201 @@ address a:hover {
 footer b {
     font-weight: 600;
 }
+
+/* ==========================
+        Home Declarations 
+============================ */
+/* HERO */
+.hero {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.hero-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+}
+
+.hero-image {
+    height: 60vh;
+}
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    /* display: flex;
+    flex-direction: column; */
+    /* justify-content: center; */
+
+    padding: 1.5rem;
+    background: rgba(0, 0, 0, 0.45);
+    color: var(--lavender);
+}
+
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translate(-5%, -20%);
+    text-align: center;
+    width: 90%;
+    max-width: 700px;
+
+}
+
+.hero-overlay h2,
+.hero-overlay p {
+    max-width: 800px;
+}
+
+.hero-overlay p {
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+}
+
+
+.hero-overlay h2 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    letter-spacing: 1px;
+    font-family: var(--font-heading);
+}
+
+.cta-btn {
+    position: absolute;
+    right: 1.5rem;
+    bottom: 1.5rem;
+    /* margin-top: auto; */
+    /* align-self: flex-end; */
+    background-color: var(--color-secondary-light);
+    color: #1a1a1a;
+    padding: 0.6rem 1rem;
+    border-radius: 9px;
+    text-decoration: none;
+    transition: var(--transition);
+    font-family: var(--font-mono);
+    font-weight: 600;
+}
+
+/* Events Section */
+.event-item,
+.current-w p,
+figure {
+    padding-left: 10px;
+    padding-bottom: 5px;
+}
+
+.events-sec,
+.forecast {
+    border-radius: var(--space-sm);
+    border: 1px solid var(--color-border);
+}
+
+.event-item h3{
+    border-bottom: 1px solid var(--color-border);
+    width: 250px;
+}
+
+
+/* Weather Section */
+.card h2, .weather-sec h2 {
+    display: flex;
+    background: linear-gradient(135deg, var(--color-primary) 80%, var(--color-primary-light) 70%);
+    color: #FFFFFF;
+    padding: 5px;
+    border-radius: var(--space-sm);
+}
+
+.forecast-card {
+    line-height: 2;
+}
+
+.card,
+.current-w,
+.forecast {
+    background-color: var(--color-surface);
+}
+
+.card h2, .current-w h2, .forecast h2{
+    font-size: large;
+    padding: 0.5rem;
+    font-weight: 600;
+}
+
+#weather-forecast,
+.weather-details p,
+.event-sec {
+    padding-left: var(--space-md);
+    margin: 0 10px;
+}
+
+
+#move {
+    margin-top: 0.4rem;
+}
+
+.card p, figcaption, h3 {
+    padding: 5px;
+    color: var(--color-text);
+}
+
+.card, .weather-sec {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 10px;
+}
+
+.weather-details {
+    padding-bottom: 5px;
+    line-height: 1.2;
+}
+
+
+
+.weather-sec .card{
+    display: block;
+    row-gap: 7rem;
+}
+
+.current-grid {
+    display: grid;
+    grid-template-columns: 90px 1fr;
+    margin-left: 5px;
+}
+
+.current-grid img {
+    width: 90%;
+    height: auto;
+}
+
+#weather-icon {
+    background: #3bbfce;
+    border-radius: 25px;
+    margin-left: 4px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    /* filter: invert(1) brightness(0.03); */
+}
+
+.forecast-card {
+    display: flex;
+    align-items: center;
+}
+
+
+/* Spotlight Section */
+#spotlight-sec {
+    margin-top: 2rem ;
+}
+
+#spotlight-sec h2 {
+    padding-left: 12px;
+}
+
+

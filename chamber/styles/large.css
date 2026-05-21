@@ -7,4 +7,18 @@
     .list-view {
         grid-template-columns: 1fr;
     }
+
+    .weather-sec {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    /* Hero */
+    .hero-content h2 {
+        font-size: 2rem;
+    }
+
+    .hero-content p {
+        font-size: 1.1rem;
+    }
 }
