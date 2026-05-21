@@ -542,10 +542,6 @@ figure {
     border-radius: var(--space-sm);
 }
 
-.forecast-card {
-    line-height: 2;
-}
-
 .card,
 .current-w,
 .forecast {
@@ -613,10 +609,11 @@ figure {
     /* filter: invert(1) brightness(0.03); */
 }
 
-.forecast-card {
+/* .forecast-card {
     display: flex;
     align-items: center;
-}
+    line-height: 2;
+} */
 
 
 /* Spotlight Section */
