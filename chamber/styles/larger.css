@@ -51,6 +51,12 @@
         grid-template-columns: 1fr 1fr;
     }
 
+    #spotlight-sec #members-container.grid-view {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0.5rem;
+    }
+
     .profile-grid img {
         margin-top: 0.4rem;
     }

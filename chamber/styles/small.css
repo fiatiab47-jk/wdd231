@@ -287,7 +287,7 @@ h1 {
 }
 
 .tag-info h2 {
-    font-weight: 500;
+    font-size: clamp(0.5rem, 3vw, 1.2rem);
 }
 
 .profile-grid {
@@ -341,7 +341,16 @@ h1 {
     display: flex;
     flex-direction: column;
 }
+#spotlight-sec #members-container.grid-view {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
 
+#spotlight-sec #members-container.grid-view section .profile-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
 
 /* List view */
 .list-view {
