@@ -43,15 +43,12 @@
 
     .grid-view {
         grid-template-columns: repeat(3, 1fr);
-
         margin-top: 1rem;
+    }
 
-        section {
-                .profile-grid {
-                    display: grid;
-                    grid-template-columns: 1fr 1fr;
-                }
-            }
+    .grid-view section .profile-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
     }
 
     .profile-grid img {

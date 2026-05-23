@@ -335,13 +335,11 @@ h1 {
     grid-template-columns: 1fr 1fr;
 
     margin-top: 0.5rem;
-    
-    section {
-        .profile-grid {
-            display: flex;
-            flex-direction: column;
-        }
-    }
+}
+        
+.grid-view section .profile-grid {
+    display: flex;
+    flex-direction: column;
 }
 
 
