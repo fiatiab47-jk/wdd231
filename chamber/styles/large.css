@@ -2,6 +2,15 @@
 @media (min-width: 620px) {
     .grid-view {
         grid-template-columns: repeat(2, 1fr);
+        
+        margin-top: 0.5rem;
+        
+        section {
+                .profile-grid {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                }
+            }
     }
 
     .list-view {

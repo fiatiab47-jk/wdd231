@@ -294,7 +294,7 @@ h1 {
     display: grid;
     grid-template-columns: 2fr 2fr;
     align-items: start;
-    gap: 1.5rem;
+    gap: 1rem;
     margin: 1rem 0 0;
 }
 
@@ -312,7 +312,7 @@ h1 {
     display: flex;
     flex-direction: column;
     line-height: 1.5;
-    margin-top: 0.5rem;
+    /* margin-top: 0.5rem; */
 }
 
 .member-info .membership.gold {
@@ -327,12 +327,21 @@ h1 {
 /* Default (mobile)*/
 #members-container {
     display: grid;
-    gap: 1rem;
+    gap: 0.3rem;
     background: var(--color-bg);
 }
 
 .grid-view {
-    padding: var(--space-sm);
+    grid-template-columns: 1fr 1fr;
+
+    margin-top: 0.5rem;
+    
+    section {
+        .profile-grid {
+            display: flex;
+            flex-direction: column;
+        }
+    }
 }
 
 
