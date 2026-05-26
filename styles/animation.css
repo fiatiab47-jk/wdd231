@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+}
+
+
+/* ============ Loader Div =========== */
+/* Check Your Understanding This code assumes that there is a div with a class of loader  */
+#loader,
+#loader-t{
+    margin: 3rem;
+    width: 70px;    /* width of the loader */
+    height: 10px;   /* height of the loader */
+    border: 5px solid transparent;  /* border width */
+    border-color: #999  #999 transparent;    /* border colors (4 - 2 transparent) */
+    border-radius: 50%; /* make it round */
+    box-shadow: 0 0 1rem rgb(0 0 255 / 40%);    /* blueish shadow effect on round div */
+}
+
+
+#loader {animation: spin 1.5s linear infinite;}   /* spin animation with duration and continuous */
+
+#loader::after {
+    content: '🌎';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: pulse 1.5s ease-in-out infinite;
+}
+
+@keyframes spin {
+    100% {transform: rotate(360deg);}     /* spin 360 degrees */
+}
+
+@keyframes pulse {/* pulse the gear emoji */
+    0%, 100% {transform: translate(-50%, -50%) scale(1.2);}     /* scale to 1 */
+    50% {transform: translate(-50%, -50%) scale(2);}      /* scale to 1.25 */
+}
+
+
+/* ================== Loader-T ================= */
+/* This code assumes that there is a div with an class of loader-t  */
+#loader-t {
+    /* the only thing that changed was using transition versus animation */
+    /* transition: spin 1.5s linear infinite; */
+    margin-top: 6rem;
+    transition: transform 1.5s ease-in-out;
+     /* only transition transform, not a keyframe name */
+}
+
+#loader-t::after {
+    /* the only thing that changed was using transition versus animation and the size and visibility at start */
+    transform: translate(-50%, -50%) scale(0);
+    transition: transform 1.5s ease-in-out;
+    font-size: 2rem;
+    content: '🌎';
+}
+
+#loader-t:hover {
+    /* transform: rotate(360deg); Rotate on hover */
+    animation: spin 1.5s linear infinite;
+
+}
+
+/* #loader-t:hover::after { */
+    /* transform: translate(-50%, -50%) scale(1.5); Scale on hover */
+/* }  */
