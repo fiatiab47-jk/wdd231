@@ -340,3 +340,61 @@ footer p{
 }
 
 
+
+/* =============== Modal Dialog ================ */
+dialog {
+    border: 1px solid rgba(123, 45, 139, 0.25);
+    border-radius: var(--radius);
+    padding: 1.5rem;
+    background-color: var(--buttermilk);
+    box-shadow: 0 0 3rem rgba(132, 45, 139, 0.25);
+    width: 90%;
+    max-width: 600px;
+    margin: auto;
+}
+
+::backdrop {
+    background-color: rgba(0, 0, 0, 0.55);
+}
+
+dialog h2 {
+    font-family: var(--velvet);
+    color: var(--buttermilk);
+    font-size: 1.1rem;
+    padding-left: 0.5rem 0.75rem;
+    border-radius: 6px 6px 0 0;
+
+}
+
+dialog h3 {
+    font-family: var(--font-display);
+    color: var(--velvet-dark);
+    font-size: 1.1rem;
+    margin: 0.75rem 0 0.5rem;
+    padding-left: 0.6rem;
+    border-left: 4px solid var(--midblue);
+}
+
+dialog p {
+    font-size: 0.95rem;
+    color: var(--text-mid);
+    margin-bottom: 0.5rem;
+    padding: 0 0.25rem;
+}
+
+dialog button {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    padding: 0.4rem 0.75rem;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: var(--radius);
+    background: var(--lavender);
+    cursor: pointer;
+    transition: background var(--transition);
+}
+
+dialog button:hover {
+    background-color: var(--velvet);
+    color: var(--buttermilk);
+}

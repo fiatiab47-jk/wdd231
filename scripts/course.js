@@ -82,6 +82,35 @@ const coursesArray = [
 const courseGrid = document.getElementById('course-cards');
 const creditCount = document.getElementById('creditCount');
 const filterButtons = document.querySelectorAll('.filter-btn');
+const courseDetails = document.getElementById('course-details');
+
+// ================ Modal Function ==================
+const displayCourseDetails = (course) => {
+    courseDetails.innerHTML = '';
+    courseDetails.innerHTML = `
+    <button id="closeModal">❌</button>
+    <h2>${course.subject} ${course.number}</h2>
+    <h3>${course.title}</h3>
+    <p><strong>Credits</strong>: ${course.credits}</p>
+    <p><strong>Certificate</strong>: ${course.certificate}</p>
+    <p>${course.description}</p>
+    <p><strong>Technologies</strong>: ${course.technology.join(', ')}</p>
+    <p><strong>Status</strong>: ${course.completed ? '✅ Completed' : '🔄 In Progress'}</p>
+    `;
+
+    courseDetails.showModal();
+    document.getElementById('closeModal').addEventListener("click", () => {
+        courseDetails.close();
+    });  
+
+    courseDetails.addEventListener('click', (e) => {
+    if (e.target === courseDetails) {
+        courseDetails.close();
+        }
+    });
+}
+
+
 
 // Render course card for a given array
 // ============= Function =============
@@ -96,6 +125,10 @@ const renderCourses = (courses) => {
         }
         
         card.innerHTML = `<span class="course-num">${course.subject} ${course.number}</span>`;
+
+        card.addEventListener('click', () => {
+        displayCourseDetails(course);
+        });
 
         courseGrid.appendChild(card);
     });
