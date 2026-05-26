@@ -359,7 +359,7 @@ dialog {
 
 dialog h2 {
     font-family: var(--velvet);
-    color: var(--buttermilk);
+    color: var(--text-dark);
     font-size: 1.1rem;
     padding-left: 0.5rem 0.75rem;
     border-radius: 6px 6px 0 0;
