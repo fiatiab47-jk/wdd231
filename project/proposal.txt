@@ -1,0 +1,27 @@
+PROJECT SUBJECT:
+Job Board UI - A responsive front-end web application for browsing,
+ searching, and filtering job listings.
+
+PROJECT DESCRIPTION:
+The Job Board UI is a three-page, client-side web application built
+ with semantic HTML, CSS Flexbox and Grid, and JavaScript.
+ The site will include the following features:
+
+- Dynamic job cards loaded from local JSON file.
+- Client-side search and filtering by keyword, category, or location.
+- A job application page with a validated HTML form.
+- a weather widget on the home page using OpenWeather API.
+- Modal dialogs for detailed job information.
+- Responsive layout that works across mobile and desktop screen sizes.
+
+REASON AND PURPOSE:
+This project serves as a practical demonstration of front-end web
+ development skills acquired across WDD 130, WDD 131, and WDD 231.
+The job board UI addresses a real world use case, connecting job seekers
+ with opportunities while exercising the full range of course learning outcomes.
+This project also represents an opportunity to prepare for the industry by a
+ real-world style application that reflects the kind of work expected of a
+ front end developer.
+
+Back-end features such as user accounts and database storage are intentionally
+ out of scope and will be addressed in the future courses.
