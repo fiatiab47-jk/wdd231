@@ -1,4 +1,4 @@
-@media only screen and (min-width: 900px) {
+@media only screen and (min-width: 780px) {
     .hamburger {
         display: none;
     }
@@ -39,6 +39,7 @@
 
     main {
         padding: 2.5rem 2rem;
+        /* margin-top: -20%; */
     }
 
     .grid-view {
@@ -98,4 +99,24 @@
         right: 3rem;
         bottom: 2rem;
     }
+
+    /* ===================================
+        Join Page - Desktop
+    ======================================*/
+    .join-layout.now {
+        display: grid;
+        grid-template-columns: 3fr 2fr ;
+        align-items: flex-start;
+    }
+    
+    .membership-cards {
+        position: sticky;
+        top: 80px;
+    }
+
+    .thankyou-action {
+        flex-direction: row;
+        justify-content: center;
+    }
+
 }

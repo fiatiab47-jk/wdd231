@@ -1,3 +1,7 @@
+W04 Project Proposal
+Student: Albert Fiati
+Course: WDD231 | BYU-Idaho 
+
 PROJECT SUBJECT:
 Job Board UI - A responsive front-end web application for browsing,
  searching, and filtering job listings.

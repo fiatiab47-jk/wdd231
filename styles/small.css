@@ -391,7 +391,7 @@ dialog button {
     border-radius: var(--radius);
     background: var(--lavender);
     cursor: pointer;
-    transition: background var(--transition);
+    transition: background-color var(--transition);
 }
 
 dialog button:hover {
