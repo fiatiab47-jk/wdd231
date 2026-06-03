@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WorkNest Job Board - WDD321 Individual Website Project Site Plan">
+    <meta name="author" content="Albert Fiati">
+    <title>WorkNest - Site Plan | WDD321</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    
+    <!-- styles -->
+     <link rel="stylesheet" href="styles/siteplan.css">
+</head>
+<body>
+    <header>
+        <div class="h-info">
+            <span>WorkNest - Site Plan</span>
+            <p>WDD Individual Website Project&nbsp;|&nbsp;BYU-Idaho</p>
+        </div>
+
+        <!-- Hidden checkbox toggles menu -->
+        <input type="checkbox" id="menu-toggle">
+        
+        <!-- Hamburger Icon -->
+        <label for="menu-toggle" class="hamburger" aria-label="Toggle menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+    </header>
+    
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="#site-name" tabindex="0">Site Name</a></li>
+            <li><a href="#purpose" tabindex="0">Purpose</a></li>
+            <li><a href="#scenarios" tabindex="0">Scenarios</a></li>
+            <li><a href="#colors" tabindex="0">Colors</a></li>
+            <li><a href="#typography" tabindex="0">Typography</a></li>
+            <li><a href="#pages" tabindex="0">Pages</a></li>
+            <li><a href="#wireframe" tabindex="0">Wireframe</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>Site Plan</h1>
+        <!-- Site Name Section -->
+        <section id="site-name">
+            <h2>Site Name</h2>
+            <P><strong>WorkNest</strong></P>
+            <p>The name <em>WorkNest</em> combines work with nest, a place to settle, grow and build a career. It convenes a sense of belonging 
+                and opportunity, positioning the platform as a welcoming hub for job seekers The name is short, memorable, and brandable.</p>
+            <span class="badge badge-course">WDD130</span>
+            <span class="badge badge-course">WDD131</span>
+            <span class="badge badge-course">WDD231</span>
+        </section>
+
+        <!-- Purpose Section -->
+        <section id="purpose">
+            <h2>Site Purpose</h2>
+            <p>WorkNest is a responsive comma client-side job board web application that allows users to browse, search. and filter job listings. 
+                The site provides a streamlined experience for job seekers to discover opportunities, safe favorites, and submit applications.
+            </p>
+            <p>The site also displays a real-time local weather location and a three day forecast on the home page using the OpenWeatherMap API 
+                and the visitor's geolocation, giving job seekers relevant context as they plan their day.</p>
+            <p>Back-end features such as user accounts and database storage are out of scope for this project and will be addressed in future courses</p>
+        </section>
+
+        <!-- Scenarios Section -->
+        <section id="scenarios">
+            <h2>Scenarios</h2>
+            <p>The following questions represent what a typical WorkNest visitor might ask:</p>
+            <div class="scenario-card">"What jobs are currently available in my field?"</div>
+            <div class="scenario-card">"How do I apply for a job i found on this site?"</div>
+            <div class="scenario-card">"Can I save jobs am interested in an come back to them later?"</div>
+            <div class="scenario-card">"what is the weather like in my area today?"</div>
+        </section>
+
+        <!-- Colors Section -->
+        <section id="colors">
+            <h2>Color Scheme</h2>
+            <p>The palette uses deep navy and indigo tones as the foundation, with a vivid purple accent 
+                for call to action, and sky blue for informational elements. 
+                All text on light colors uses dark navy to meet WCAG AA contrast standards.</p>
+                
+                <!-- Colors Grid -->
+                <div class="color-grid">
+                    
+                    <div class="color-swatch">
+                        <div class="swatch-block" style="background:#040617;"></div>
+                        <div class="swatch-info">
+                            <p>Base / Page bg</p>
+                            <span>#040617</span>
+                        </div>
+                    </div>
+
+                    <div class="color-swatch">
+                        <div class="swatch-block" style="background:#242488;"></div>
+                        <div class="swatch-info">
+                            <p>Deep Navy / Footer</p>
+                            <span>#242488</span>
+                        </div>
+                    </div>
+
+                    <div class="color-swatch">
+                        <div class="swatch-block" style="background:#45308A;"></div>
+                        <div class="swatch-info">
+                            <p>Indigo / Nav bg</p>
+                            <span>#45308A</span>
+                        </div>
+                    </div>
+
+                    <div class="color-swatch">
+                        <div class="swatch-block" style="background: #536BB2;"></div>
+                        <div class="swatch-info">
+                            <p>Steel Blue / Buttons</p>
+                            <span>#536BB2</span>
+                        </div>
+                    </div>
+
+                    <div class="color-swatch">
+                        <div class="swatch-block" style="background:#500CA4;"></div>
+                        <div class="swatch-info">
+                            <p>Purple / CTA accent</p>
+                            <span>#500CA4</span>
+                        </div>
+                    </div>
+                    <div class="color-swatch">
+                        <div class="swatch-block" style="background:#83BDEB;"></div>
+                        <div class="swatch-info">
+                            <p>Sky Blue / Cards</p>
+                            <span>#83BDEB</span>
+                        </div>
+                    </div>
+
+                    <div class="color-swatch">
+                        <div class="swatch-block" style="background:#189EA2;"></div>
+                        <div class="swatch-info">
+                            <p>Cyan Blue / Cards</p>
+                            <span >#189EA2</span>
+                        </div>
+                    </div>
+
+                    <div class="color-swatch">
+                        <div class="swatch-block" style="background:#404617;"></div>
+                        <div class="swatch-info">
+                            <p>Olive / Tags / Badges</p>
+                            <span>#040617</span>
+                        </div>
+                    </div>
+        </section>
+
+        <!-- Typography Section -->
+        <section id="typography">
+            <h2>Typography</h2>
+
+            <div class="font-demo">
+                <p class="label">Headings - Nunito Sans (Google Fonts)</p>
+                <p class="font-heading-demo">Find Your Next Opportunity</p>
+                <p style="font-size: 0.8rem; color:#83BDEB; margin-top:0.3rem;">Used for: <code>h1</code>, <code>h2</code>, <code>h3</code>, nav links, site name</p>
+            </div>
+
+            <div class="font-demo">
+                <p class="label">Body - Inter (Google Fonts)</p>
+                <p class="font-body-demo">Browse hundreds of job listings tailored to your skills, location, and career goals. Save your favorites and apply with confidence.</p>
+                <p style="font-size: 0.8rem; color:#83BDEB; margin-top:0.3rem;">Used for: headings, nav links, site name</p>
+            </div>
+
+            <div class="font-demo">
+                <p class="label">Subheadings &amp; UI Elements - Nunito (Google Fonts)</p>
+                <p class="font-header-demo">Search Jobs ▪ Save Listings ▪ Track Applications.</p>
+                <p style="font-size: 0.8rem; color:#83BDEB; margin-top:0.3rem;">Used for: card titles, buttons and supporting interface text.</p>
+            </div>
+
+
+        </section>
+        
+        <section id="pages">
+            <h2>Page Description</h2>
+
+            <div class="pages-grid">
+                <div class="page-card">
+                    <h3>Home</h3>
+                    <span class="filename">index.html</span>
+                    <p>Landing page featuring a hero section, local weather widget (OpenWeatherMap API + Geolocation), 
+                        featured jobs highlights, and site navigation.</p>
+                </div>
+
+                <div class="page-card">
+                    <h3>Job Directory</h3>
+                    <span class="filename">jobs.html</span>
+                    <p>Display all jobs listings dynamically loaded from local JSON file. Includes search, filter by 
+                        category/location, favorite toggle with local storage, and modal dialogs for job details.</p>
+                </div>
+
+                <div class="page-card">
+                    <h3>Apply</h3>
+                    <span class="filename">apply.html</span>
+                    <p>A validated HTML application form for submitting a job application. On submission, data is displayed on a confirmation/action page.
+                        featured jobs highlights, and site navigation.</p>
+                </div>
+            </div>
+        </section>
+
+       <section id="wireframe">
+            <h2>Wireframe - Home Page</h2>
+            <p>Simplified layout representation for mobile and desktop views of<code>index.html</code>.</p>
+        
+            <div class="wireframe-container">
+                <div class="wireframe">
+                    <h3>Mobile View (320px+)</h3>
+
+                    <div class="wf-block header">
+                        <span class="wf-logo">Logo</span>
+                        <span class="wf-site-name">WorkNest</span>
+                        <div class="wf-nav">☰</div>
+                    </div>
+                    <div class="wf-block">Hero - Headline + CTA Button</div>
+                    <div class="wf-block">Weather Widget <br>(Current + 3-day)</div>
+                    <div class="wf-block">Featured Job Card</div>
+                    <div class="wf-block">Featured Job Card</div>
+                    <div class="wf-block">Featured Job Card</div>
+                    <div class="wf-block">Footer + Socials + video Link</div>
+                </div>
+
+                <div class="wireframe">
+                    <h3>Desktop View (780px+)</h3>
+
+                    <div class="wf-block header">
+                        <span class="wf-logo">Logo</span>
+                        <span class="wf-site-name">WorkNest</span>
+
+                        <div class="wf-desktop nav">
+                            <span class="desktop-nav">Home</span>
+                            <span class="desktop-nav">Job Directory</span>
+                            <span class="desktop-nav">Apply</span>
+                        </div>
+                    </div>
+                    <div class="wf-block accent" style="padding:1.5rem;">Hero - Heading + Subheading + CTA Button</div>
+                    <div class="wf-block" sky>Weather Widget - Current Conditions + 3-day Forecast ()flex row</div>
+
+                    <p style="font-size: 0.7rem; text-align: center; color: #83BDEB; margin: 4px 0;">Featured Jobs</p>
+                    <div class="wf-grid-3">
+                        <div class="wf-block" style="margin: 0;">Job Card</div>
+                        <div class="wf-block" style="margin: 0;">Job Card</div>
+                        <div class="wf-block" style="margin: 0;">Job Card</div>
+                    </div>
+
+                    <div class="wf-grid-3">
+                        <div class="wf-block" style="margin: 0;">Job Card</div>
+                        <div class="wf-block" style="margin: 0;">Job Card</div>
+                        <div class="wf-block" style="margin: 0;">Job Card</div>
+                    </div>
+                    <div class="wf-block">Footer + Socials + Attributions + Video Link</div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 WDD231 &mdash; WorkNest Site Plan &nbsp;|&nbsp; BYU-Idaho</p>
+    </footer>
+</body>
+</html>
