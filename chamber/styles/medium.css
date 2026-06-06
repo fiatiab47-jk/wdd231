@@ -1,0 +1,74 @@
+/* pad (2 columns) */
+@media (min-width: 641px) {
+    .grid-view {
+        grid-template-columns: repeat(2, 1fr);
+        
+        margin-top: 0.5rem;
+
+    }
+
+    .grid-view section .profile-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #spotlight-sec #members-container.grid-view {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .list-view {
+        grid-template-columns: 1fr;
+    }
+
+    .weather-sec {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    /* Hero */
+    .hero-content h2 {
+        font-size: 2rem;
+    }
+
+    .hero-content p {
+        font-size: 1.1rem;
+    }
+
+    /* Discover */
+    .discover-card {
+        display: grid;
+        grid-template-columns: 300px 1fr;
+        grid-template-areas:
+            "title title"
+            "image content"
+            "button button";
+    }
+
+    .discover-card h2{
+        grid-area: title;
+    }
+
+    .discover-card figure {
+        grid-area: image;
+        margin: 0;
+    }
+
+    .discover-card .content {
+        grid-area: content;
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .discover-card address, 
+    .discover-card p {
+        grid-column: 2;
+    }
+
+    .discover-card button {
+        grid-area: button;
+        width: 90%;
+    }
+}

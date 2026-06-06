@@ -1066,10 +1066,106 @@ dd {
     background-color: var(--color-primary);
     color: var(--color-surface);
     border: 1px solid var(--color-text);
-
 }
 
 
+/* ========================
+    DISCOVER
+=========================== */
+#visit-message {
+    margin-bottom: 1rem;
+    padding: 1em;
+    border-left: 4px solid var(--color-secondary);
+    background: #cfcccc;
+    font-weight: 600;
+}
+
+#discover-grid {
+    padding: 8px;
+    display: grid;
+    grid-template-areas: 
+    "card1"
+    "card2"
+    "card3"
+    "card4"
+    "card5"
+    "card6"
+    "card7"
+    "card8";
+}
+
+.discover-card {
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0 0 0 / 30%);
+    /* margin-inline: auto; */
+    margin: .5rem auto;
+    /* max-width: 600px; */
+    width: 100%;
+    display:grid;
+    gap: 1rem;
+}
+
+.discover-card button {
+    justify-self: center;
+}
+
+.discover-card h2 {
+    padding-top: .5rem;
+    font-size: clamp(0.8rem, 3vw, 1.5rem);
+}
+
+.discover-card h2,
+.discover-card address,
+.discover-card p,
+.discover-card button{
+margin: .5rem;
+display: flex;
+justify-content: center;
+}
+
+.discover-card img {
+    display: block;
+    margin: 0 auto;
+    width: 300px;
+    height: 200px; 
+    transition: opacity .4 ease, transform .4s ease;
+}
+
+.discover-card img:hover {
+    animation: imageFade .4 ease forwards;
+    transform: scale(1.04);
+}
+
+@keyframes imageFade {
+    from {
+        opacity: 1;
+        filter: drop-shadow(0 0 0 transparent);
+    }
+
+    to {
+        opacity: 0.85;
+        filter: drop-shadow(0 6px 12px rgba(0, 0, 0, 0.3));
+    }
+}
+
+
+.discover-card address {
+    font-style: normal;
+    color: var(--text-dark);
+}
+
+.discover-card button {
+    cursor: pointer;
+    border: none;
+    padding: .5rem;
+    border-radius: 999px;
+    background: var(--color-primary);
+    color: var(--lavender);
+    width: 90%;
+    margin-top: 15px;
+}
 
 
 
