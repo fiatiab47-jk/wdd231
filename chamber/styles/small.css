@@ -1116,6 +1116,12 @@ dd {
     font-size: clamp(0.8rem, 3vw, 1.5rem);
 }
 
+.discover-card .content p{
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+}
+
 .discover-card h2,
 .discover-card address,
 .discover-card p,
