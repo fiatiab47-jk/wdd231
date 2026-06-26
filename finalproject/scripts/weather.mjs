@@ -97,7 +97,9 @@ async function getCurrentWeather(url) {
 
 
 //displayCurrentWeather(data)
-// Takes the JSON response and put the values in the HTML
+// Takes the JSON response and put the values in the HTML.
+// High ans low are intentionally excluded here - they are
+// calculated more accurately inside getForecast() below.
 // ==========================================================
 function displayCurrentWeather(data) {
     // current temperature; Math.round removes decimals
@@ -115,18 +117,15 @@ function displayCurrentWeather(data) {
 
     // Weather description e.g. "light rain"
     // to uppercase on the first letter for a cleaner display
+    // Capitalize the first letter of the description
     captionDesc.textContent = desc.charAt(0).toUpperCase() + desc.slice(1);
-
-    // High and low temperatures
-    highTemp.innerHTML = `${Math.round(data.main.temp_max)}&deg;C`;
-    lowTemp.innerHTML = `${Math.round(data.main.temp_min)}&deg;C`;
 
     // Humidity 
     humidity.textContent = `${data.main.humidity}%`;
 
     // Sunrise - the API returns Unix timestamp in seconds
-    // We multiply by 100 to convert to milliseconds fot JavaScript Date
-    // data.timezone is the offset in seconds form UTC
+    // Multiply by 1000 to convert to milliseconds fot JavaScript Date
+    // data.timezone is the UTC offset in seconds for the location
     const sunriseTime = new Date((data.sys.sunrise + data.timezone) * 1000);
     sunrise.textContent = sunriseTime.toLocaleTimeString('en-US', {
         hour: 'numeric',
@@ -135,7 +134,7 @@ function displayCurrentWeather(data) {
         timeZone: 'UTC'
     });
 
-    // Sunset - same approach as the sunrise 
+    // Sunset - same approach as sunrise 
     const sunsetTime = new Date((data.sys.sunset + data.timezone) * 1000);
     sunset.textContent = sunsetTime.toLocaleTimeString('en-US', {
         hour: 'numeric',
@@ -160,6 +159,25 @@ async function getForecast(url) {
         }
         // convert server response to JSON format
         const data = await response.json();
+
+        // Get today's date as YYYY-MM-DD for filtering
+        const today = new Date().toISOString().split('T')[0];
+
+        // filter() gets all 3-hour entries that belong to today
+        const todayEntries = data.list.filter(item =>
+            item.dt_txt.startsWith(today)
+        );
+
+        // If today has entries, calculate true high and low
+        // map() extracts just the temp from each entry
+        // Math.max/min with spread finds the highest and lowest value
+        if (todayEntries.length > 0) {
+            const temps = todayEntries.map(item => item.main.temp);
+            highTemp.innerHTML = `${Math.round(Math.max(...temps))}&deg;C`;
+            lowTemp.innerHTML  = `${Math.round(Math.min(...temps))}&deg;C`;
+        }
+
+        // Pass the full list to displayForecast for the 3-day cards
         displayForecast(data.list);
     } catch (error) {
         console.error('Failed to fetch forecast:', error);
@@ -177,10 +195,17 @@ const displayForecast = (forecastData) => {
     // clear any previous content
     forecastContainer.innerHTML = '';
 
-    // filter() keeps only items where the time is 12:00:00
+    // Get today's date as YYYY-MM-DD string
+    // Used to exclude today from the forecast cards since
+    //current weather is already displayed above
+    const today = new Date().toISOString().split('T')[0];
+    
+
+    // filter() keeps only 12:00 PM entries that are NOT today
     // slice(0,3) takes just the first 3 results (every 3 next Days)
     const filteredData = forecastData.filter(
-        item => item.dt_txt.includes('12:00:00')
+        item => item.dt_txt.includes('12:00:00') 
+    
     ).slice(0, 3);
 
     // forEach() loops over the 3 days and builds a card for each
@@ -210,4 +235,4 @@ const displayForecast = (forecastData) => {
     });
 };
 
-loadWeather();
+// loadWeather();
