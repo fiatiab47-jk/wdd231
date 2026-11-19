@@ -1,0 +1,30 @@
+Final Project Ideas
+
+1. Barbershop Booking App
+Customers choose a service, barber, date, and time, then view or cancel their bookings.
+The apps checks the weather and holidays for the Chosen day so customers know what to 
+expert.
+    APIs
+    - Open-Meteo: forecast for the appointment day
+    - Nager.Date: public holidays, so those dates can be blocked or flagged
+
+2. Recipe Finder
+Search meals by ingredient or category, view the instructions, and save favorites. Each
+recipe can also show nutrition details for its ingredients.
+    APIs
+    - TheMealDB: recipe, ingredients,categories
+    - Open Food Facts: nutrition data
+
+3. Workout Planner
+Browse exercises by muscle group and build a weekly plan, with demo videos for each exercise.
+    APIs
+    - wger:exercises and muscle groups
+    YouTube Data: demo videos
+
+4. Travel Planner
+Enter a country to see its basic info, the current weather, and the exchange rate 
+for your country.
+    APIs
+    - REST Countries: country info, currency, flagged
+    - Open-Meteo: weather
+    - Frankfurter: exchange rates
